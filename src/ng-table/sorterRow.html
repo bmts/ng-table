@@ -1,5 +1,6 @@
 <tr>
-    <th title="{{$column.headerTitle(this)}}"
+    <th tooltip-enable="$root.helpIsVisible"
+        uib-tooltip="{{$column.headerTitle(this)}}" tooltip-placement="top" tooltip-trigger="'mouseenter'"
         ng-repeat="$column in $columns"
         ng-class="{
                     'sortable': $column.sortable(this),
